@@ -2,6 +2,8 @@
   "item.tutorialmod.sapphire": "Sapphire",
   "item.tutorialmod.raw_sapphire": "Raw Sapphire",
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.strawberry": "Strawberry",
+  "item.tutorialmod.pine_cone": "Pine Cone",
 
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
   "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
@@ -11,5 +13,7 @@
   "block.tutorialmod.end_sapphire_ore": "End Sapphire Ore",
   "block.tutorialmod.sound_block": "Sound Block",
 
-  "creativetab.tutorial_tab" : "Sapphire Tutorial Tab"
+  "creativetab.tutorial_tab" : "Sapphire Tutorial Tab",
+
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground"
 }
