@@ -14,7 +14,10 @@ public class ModItems
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Magnetica.MOD_ID);
 
-    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
+    public static final RegistryObject<Item> MAGNETICA_DUST = ITEMS.register("magnetica_dust",
+            () -> new Item(new Item.Properties()));
+
+    /*public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire",
             () -> new Item(new Item.Properties()));
@@ -26,7 +29,7 @@ public class ModItems
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
-            () -> new FuelItem(new Item.Properties(), 400));
+            () -> new FuelItem(new Item.Properties(), 400));*/
 
     public static void register(IEventBus eventBus)
     {

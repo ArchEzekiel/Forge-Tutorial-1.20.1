@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "magnetica:block/construct_powder"
+      },
+      {
+        "model": "magnetica:block/construct_powder",
+        "y": 90
+      },
+      {
+        "model": "magnetica:block/construct_powder",
+        "y": 180
+      },
+      {
+        "model": "magnetica:block/construct_powder",
+        "y": 270
+      }
+    ]
+  }
+}

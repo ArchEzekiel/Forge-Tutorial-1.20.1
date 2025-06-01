@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,7 +23,29 @@ public class ModBlocks
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Magnetica.MOD_ID);
 
-    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+    public static final RegistryObject<Block> MAGNETICA_BLOCK = registerBlock("magnetica_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.REDSTONE_BLOCK)));
+    public static final RegistryObject<Block> MAGNETICA_ORE = registerBlock("magnetica_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(new ForgeSoundType(
+                            1.0F,
+                            0.7F,
+                            () -> SoundEvents.AMETHYST_BLOCK_BREAK,
+                            () -> SoundEvents.AMETHYST_BLOCK_STEP,
+                            () -> SoundEvents.AMETHYST_BLOCK_PLACE,
+                            () -> SoundEvents.AMETHYST_BLOCK_HIT,
+                            () -> SoundEvents.AMETHYST_BLOCK_FALL)),
+                    UniformInt.of(3, 6))
+            );
+
+    public static final RegistryObject<Block> CONSTRUCT_CONCRETE = registerBlock("construct_concrete",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_CONCRETE)));
+    public static final RegistryObject<Block> CONSTRUCT_POWDER = registerBlock("construct_powder",
+            () -> new ConcretePowderBlock(CONSTRUCT_CONCRETE.get(), BlockBehaviour.Properties.copy(Blocks.BLUE_CONCRETE_POWDER)));
+
+    /*public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
@@ -86,7 +109,7 @@ public class ModBlocks
                     .copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.AMETHYST)
                     .noOcclusion(),
-                BlockSetType.IRON));
+                BlockSetType.IRON));*/
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> blocks)
     {

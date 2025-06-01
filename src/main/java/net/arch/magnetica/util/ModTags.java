@@ -12,8 +12,8 @@ public class ModTags
 {
     public static class Blocks
     {
-        public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
-        public static final TagKey<Block> SAPPHIRE_ORES = tag("sapphire_ores");
+        /*public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
+        public static final TagKey<Block> SAPPHIRE_ORES = tag("sapphire_ores");*/
 
         private static TagKey<Block> tag(String name)
         {

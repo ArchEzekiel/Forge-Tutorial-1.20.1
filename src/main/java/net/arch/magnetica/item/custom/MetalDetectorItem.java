@@ -72,6 +72,6 @@ public class MetalDetectorItem extends Item
 
     private boolean isValuableBlock(BlockState state)
     {
-        return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
+        return false;//state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 }

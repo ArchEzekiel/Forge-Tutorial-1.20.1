@@ -26,7 +26,14 @@ public class ModBlockLootTables extends BlockLootSubProvider
     @Override
     protected void generate()
     {
-        this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
+        this.dropSelf(ModBlocks.MAGNETICA_BLOCK.get());
+        this.dropSelf(ModBlocks.CONSTRUCT_POWDER.get());
+        this.dropSelf(ModBlocks.CONSTRUCT_CONCRETE.get());
+
+        this.add(ModBlocks.MAGNETICA_ORE.get(),
+                block -> createOreDrops(ModBlocks.MAGNETICA_ORE.get(), ModItems.MAGNETICA_DUST.get()));
+
+        /*this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
@@ -50,14 +57,14 @@ public class ModBlockLootTables extends BlockLootSubProvider
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
         this.add(ModBlocks.SAPPHIRE_DOOR.get(),
-                block -> createSlabItemTable(ModBlocks.SAPPHIRE_DOOR.get()));
+                block -> createSlabItemTable(ModBlocks.SAPPHIRE_DOOR.get()));*/
     }
 
     protected LootTable.Builder createOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

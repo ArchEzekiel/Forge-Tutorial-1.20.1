@@ -23,7 +23,9 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels()
     {
-        simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.MAGNETICA_DUST);
+
+        /*simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.RAW_SAPPHIRE);
 
         simpleItem(ModItems.METAL_DETECTOR);
@@ -40,7 +42,7 @@ public class ModItemModelProvider extends ItemModelProvider
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_STAIRS);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_SLAB);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
-        evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);*/
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)

@@ -3,8 +3,11 @@ package net.arch.magnetica.datagen;
 import net.arch.magnetica.Magnetica;
 import net.arch.magnetica.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.VariantProperties;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -18,7 +21,11 @@ public class ModBlockStateProvider extends BlockStateProvider
     @Override
     protected void registerStatesAndModels()
     {
-        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.MAGNETICA_BLOCK);
+        blockWithItem(ModBlocks.MAGNETICA_ORE);
+        blockWithItem(ModBlocks.CONSTRUCT_CONCRETE);
+
+        /*blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
 
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
@@ -45,7 +52,7 @@ public class ModBlockStateProvider extends BlockStateProvider
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.SAPPHIRE_TRAPDOOR.get(),
                 modLoc("block/sapphire_trapdoor"),
                 true,
-                "cutout");
+                "cutout");*/
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject)

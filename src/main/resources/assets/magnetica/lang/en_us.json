@@ -1,27 +1,10 @@
 {
-  "item.magnetica.sapphire": "Sapphire",
-  "item.magnetica.raw_sapphire": "Raw Sapphire",
-  "item.magnetica.metal_detector": "Metal Detector",
-  "item.magnetica.strawberry": "Strawberry",
-  "item.magnetica.pine_cone": "Pine Cone",
+  "item.magnetica.magnetica_dust": "Magnetica Dust",
 
-  "block.magnetica.sapphire_block": "Block of Sapphire",
-  "block.magnetica.raw_sapphire_block": "Block of Raw Sapphire",
-  "block.magnetica.sapphire_ore": "Sapphire Ore",
-  "block.magnetica.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
-  "block.magnetica.nether_sapphire_ore": "Nether Sapphire Ore",
-  "block.magnetica.end_sapphire_ore": "End Sapphire Ore",
-  "block.magnetica.sound_block": "Sound Block",
-  "block.magnetica.sapphire_stairs": "Sapphire Stairs",
-  "block.magnetica.sapphire_slab": "Sapphire Slab",
-  "block.magnetica.sapphire_button": "Sapphire Button",
-  "block.magnetica.sapphire_pressure_plate": "Sapphire Pressure Plate",
-  "block.magnetica.sapphire_fence": "Sapphire Fence",
-  "block.magnetica.sapphire_fence_gate": "Sapphire Fence Gate",
-  "block.magnetica.sapphire_wall": "Sapphire Wall",
-  "block.magnetica.sapphire_door": "Sapphire Door",
-  "block.magnetica.sapphire_trapdoor": "Sapphire Trapdoor",
+  "block.magnetica.magnetica_block": "Block of Magnetica",
+  "block.magnetica.magnetica_ore": "Magnetica Ore Block",
+  "block.magnetica.construct_powder": "Construct Powder",
+  "block.magnetica.construct_concrete": "Construct Concrete",
 
-  "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
-  "tooltip.magnetica.metal_detector.tooltip": "Finds valuables underground"
+  "creativetab.magnetica_tab": "Magnetica"
 }
