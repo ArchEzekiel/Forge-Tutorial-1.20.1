@@ -2,18 +2,33 @@
   "variants": {
     "": [
       {
-        "model": "magnetica:block/construct_powder"
+        "model": "magnetica:block/construct_powder_a"
       },
       {
-        "model": "magnetica:block/construct_powder",
+        "model": "magnetica:block/construct_powder_a",
         "y": 90
       },
       {
-        "model": "magnetica:block/construct_powder",
+        "model": "magnetica:block/construct_powder_a",
         "y": 180
       },
       {
-        "model": "magnetica:block/construct_powder",
+        "model": "magnetica:block/construct_powder_a",
+        "y": 270
+      },
+      {
+        "model": "magnetica:block/construct_powder_b"
+      },
+      {
+        "model": "magnetica:block/construct_powder_b",
+        "y": 90
+      },
+      {
+        "model": "magnetica:block/construct_powder_b",
+        "y": 180
+      },
+      {
+        "model": "magnetica:block/construct_powder_b",
         "y": 270
       }
     ]

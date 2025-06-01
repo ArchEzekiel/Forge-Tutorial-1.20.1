@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "magnetica:block/construct_powder_a"
+    "all": "magnetica:block/construct_powder_b"
   }
 }

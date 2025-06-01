@@ -4,11 +4,13 @@ import net.arch.magnetica.Magnetica;
 import net.arch.magnetica.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.models.blockstates.VariantProperties;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider
@@ -24,6 +26,8 @@ public class ModBlockStateProvider extends BlockStateProvider
         blockWithItem(ModBlocks.MAGNETICA_BLOCK);
         blockWithItem(ModBlocks.MAGNETICA_ORE);
         blockWithItem(ModBlocks.CONSTRUCT_CONCRETE);
+
+        //addRandomVariants(ModBlocks.CONSTRUCT_POWDER, 2);
 
         /*blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
@@ -59,4 +63,10 @@ public class ModBlockStateProvider extends BlockStateProvider
     {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+    private void addRandomVariants(RegistryObject<Block> blockRegistryObject, int count)
+    {
+        ResourceLocation name = blockRegistryObject.getId();
+        simpleBlockItem(blockRegistryObject.get(), models().getExistingFile(ResourceLocation.parse("sand.json")));
+    }
+
 }
